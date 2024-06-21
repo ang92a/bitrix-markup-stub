@@ -2,10 +2,24 @@
 @use '../core/lib/scss' as lib;
 @use '../core/ui/layout';
 
+// подключаем шрифты
+@use '../app/module/fonts' as fonts;
+// подключаем переменные
+@use '../app/module/colors' as color;
+// подключаем стили компонентов
+@use '../components/header/header';
+
 * {
+  @include fonts.font('Proxima Nova', 400, 'ProximaNova-Black');
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: color.$text--primary;
+  background-color: color.$background--primary;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 
   &::-webkit-scrollbar {
     width: 8px;
@@ -17,7 +31,7 @@
 
   &::-webkit-scrollbar-thumb {
     background-color: config.$colors-black;
-  }    
+  }
 }
 
 html {

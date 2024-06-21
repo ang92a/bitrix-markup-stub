@@ -1,0 +1,25 @@
+.header
+  a.header__logo(href='/')
+    | Marketplace
+
+  .header__search 
+    img.header__search_icon(src="assets/icons/search.svg")
+    input.header__search_input(placeholder='Search for a product, flower, etc')
+
+  .header__options
+    input.header__checkbox(type='checkbox', id='option1')
+    label(for='option1') 
+      img(src='assets/icons/highest-quality.svg' alt='img')
+      | Buds
+    input.header__checkbox(type='checkbox', id='option2')
+    label(for='option2')
+      img(src='assets/icons/highest-quality.svg' alt='img')
+      | Edible
+    input.header__checkbox(type='checkbox', id='option3')
+    label(for='option3')
+      img(src='assets/icons/highest-quality.svg' alt='img')
+      | Non Edible
+    input.header__checkbox(type='checkbox', id='option4')
+    label(for='option4')
+      img(src='assets/icons/highest-quality.svg' alt='img')
+      | Concentrate  
